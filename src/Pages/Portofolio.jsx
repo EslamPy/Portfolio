@@ -69,7 +69,7 @@ const techStacks = [
   // { icon: "Flask.svg", language: "Flask" },
   { icon: "Java.svg", language: "Java" },
   { icon: "Spring boot.svg", language: "Spring Boot" },
-  // { icon: "Oracle.svg", language: "Oracle" },
+  { icon: "Oracle.svg", language: "Oracle" },
   { icon: "firebase.svg", language: "Firebase" },
   { icon: "vercel.svg", language: "Vercel" },
   { icon: "GitHub.png", language: "GitHub" },
