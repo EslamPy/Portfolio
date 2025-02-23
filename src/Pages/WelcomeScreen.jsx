@@ -31,16 +31,16 @@ const TypewriterEffect = ({ text }) => {
 
 const BackgroundEffect = () => (
   <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 blur-3xl animate-pulse" />
-    <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/10 via-transparent to-purple-600/10 blur-2xl animate-float" />
+    <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 blur-3xl animate-pulse"/>
+    <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/10 via-transparent to-purple-600/10 blur-2xl animate-float"/>
   </div>
 );
 
 const IconButton = ({ Icon }) => (
   <div className="relative group hover:scale-110 transition-transform duration-300">
-    <div className="absolute -inset-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300" />
+    <div className="absolute -inset-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300"/>
     <div className="relative p-2 sm:p-3 bg-black/50 backdrop-blur-sm rounded-full border border-white/10">
-      <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white" />
+      <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white"/>
     </div>
   </div>
 );
@@ -94,7 +94,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
     <AnimatePresence>
       {isLoading && (
         <motion.div className="fixed inset-0 bg-[#030014]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit="exit" variants={containerVariants}>
-          <BackgroundEffect />
+          <BackgroundEffect/>
           
           <div className="relative min-h-screen flex items-center justify-center px-4">
             <div className="w-full max-w-4xl mx-auto">

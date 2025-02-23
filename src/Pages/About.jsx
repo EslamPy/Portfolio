@@ -195,7 +195,6 @@ const AboutPage = () => {
               </a>
             </div>
           </div>
-          
           <ProfileImage/>
         </div>
 

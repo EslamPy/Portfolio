@@ -7,10 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Comment = memo(({ comment, formatDate, index }) => (
-    <div 
-        className="px-4 pt-4 pb-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all group hover:shadow-lg hover:-translate-y-0.5"
-        
-    >
+    <div className="px-4 pt-4 pb-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all group hover:shadow-lg hover:-translate-y-0.5">
         <div className="flex items-start gap-3 ">
             {comment.profileImage ? (
                 <img src={comment.profileImage} alt={`${comment.userName}'s profile`} className="w-10 h-10 rounded-full object-cover border-2 border-indigo-500/30" loading="lazy"/>
