@@ -2,6 +2,7 @@
   "version": 2,
   "buildCommand": null,
   "outputDirectory": "dist",
+  "public": true,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
