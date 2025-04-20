@@ -1,14 +1,12 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
   "buildCommand": null,
   "outputDirectory": "dist",
   "routes": [
     { "handle": "filesystem" },
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/(.*\\.(js|css|svg|png|jpg|jpeg|gif|ico|json|woff|woff2|ttf|eot))", "dest": "/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*)", "dest": "/index.html", "status": 200 }
   ],
   "github": {
     "silent": false
