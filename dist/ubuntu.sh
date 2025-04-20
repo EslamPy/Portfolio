@@ -1,4 +1,4 @@
-#!/bin/bash
+pp#!/bin/bash
 
 # Fungsi untuk logging
 log() {
