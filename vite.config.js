@@ -9,6 +9,13 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     emptyOutDir: true,
-    sourcemap: false
+    sourcemap: false,
+    minify: 'terser',
+    chunkSizeWarningLimit: 1600,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   }
 })

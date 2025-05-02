@@ -1,19 +1,33 @@
-import { spawn } from 'child_process';
+import { build } from 'vite';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const vitePath = path.resolve(__dirname, 'node_modules', 'vite', 'bin', 'vite.js');
 
-console.log('Vite path:', vitePath);
-console.log('Running build...');
+async function buildProject() {
+  console.log('Starting Vite build process...');
+  
+  try {
+    // Use the Vite build API
+    const result = await build({
+      configFile: path.resolve(__dirname, 'vite.config.js'),
+      root: __dirname,
+      logLevel: 'info'
+    });
+    
+    console.log('Build completed successfully');
+    return 0;
+  } catch (error) {
+    console.error('Build failed:', error);
+    return 1;
+  }
+}
 
-const child = spawn('node', [vitePath, 'build'], { 
-  stdio: 'inherit',
-  shell: true 
-});
-
-child.on('close', (code) => {
-  console.log(`Build process exited with code ${code}`);
-  process.exit(code);
-}); 
+buildProject()
+  .then(code => {
+    process.exit(code);
+  })
+  .catch(err => {
+    console.error('Unexpected error:', err);
+    process.exit(1);
+  }); 
