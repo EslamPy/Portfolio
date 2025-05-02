@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "buildCommand": "node build.js",
+  "framework": null,
+  "buildCommand": null,
   "outputDirectory": "dist",
-  "public": true,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "installCommand": "npm install --omit=optional",
-  "framework": "vite"
+  ]
 }
