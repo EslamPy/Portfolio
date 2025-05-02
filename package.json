@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "echo 'Build skipped - using pre-built files'",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -19,7 +19,6 @@
     "@mui/material": "^6.1.6",
     "@mui/styled-engine-sc": "^6.1.6",
     "@react-spring/web": "^9.7.5",
-    "@rollup/rollup-win32-x64-msvc": "^4.40.1",
     "@shadcn/ui": "^0.0.4",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.37",
